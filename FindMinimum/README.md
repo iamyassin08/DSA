@@ -1,4 +1,4 @@
-# Daily Programmer - Episode 2
+
 
 # Find the minimum value in an array of numbers
 

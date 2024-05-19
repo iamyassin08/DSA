@@ -1,4 +1,3 @@
-# Daily Programmer - Episode 0
 
 # Fizz Buzz
 
