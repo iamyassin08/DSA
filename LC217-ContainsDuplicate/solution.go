@@ -45,13 +45,13 @@ func containsDuplicate(nums []int) bool {
 	//starts a for loop that iterates over each element in the nums slice. The _ is used to ignore the index of the element, and num represents the current element in the iteration.
 	for _, num := range nums {
 
-		// Inside the loop, this line checks if the current number (num) is already present in the dup map. If dup[num] is true, it means the number num has been encountered before, indicating
+		// Check if the element is already in the "set" !...Inside the loop, this line checks if the current number (num) is already present in the dup map. If dup[num] is true, it means the number num has been encountered before, indicating
 		// a duplicate. In this case, the function returns true, signifying that a duplicate has been found.
 		if dup[num] {
 			return true
 		}
 
-		//f the current number (num) is not found in the dup map, this line sets dup[num] to true. This marks the number as seen by adding it to the map.
+		//Add the element to the "set"!!>.if the current number (num) is not found in the dup map, this line sets dup[num] to true. This marks the number as seen by adding it to the map.
 		dup[num] = true
 	}
 	//If the loop completes without finding any duplicates, this line returns false, indicating that no duplicates were found in the nums slice.
