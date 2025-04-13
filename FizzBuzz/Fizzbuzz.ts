@@ -50,23 +50,23 @@ function fizzBuzz(n: number): string[] {
     //create an empty array 
     let arr: string[] = []
     //make a loop
-    for (let currentnumber = 1; currentnumber <= n; currentnumber++) {
+    for (let i = 1; i <= n; i++) {
 
         //Conditions 4 -= disvble states for modula
         //Checks if current number is disible by 3 and 5
-        if (currentnumber % 3 === 0 && currentnumber % 5 === 0) {
+        if (i % 3 === 0 && i % 5 === 0) {
             arr.push("FizzBuzz") //append to the array
         }
 
-        else if (currentnumber % 3 === 0) {
+        else if (i % 3 === 0) {
             arr.push("Fizz")//append to the array
         }
 
-        else if (currentnumber % 5 === 0) {
+        else if (i % 5 === 0) {
             arr.push("Buzz") //append to the array
         }
         else {
-            arr.push(currentnumber.toString())
+            arr.push(i.toString())
         }
     };
     // TODO: Implement the FizzBuzz solution
