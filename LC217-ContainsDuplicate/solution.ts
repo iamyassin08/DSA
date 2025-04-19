@@ -137,3 +137,26 @@ function containsDuplicate(nums: number[]): boolean {
     // return false;
 // }
 
+
+// function containsDuplicate(nums: number[]): boolean {
+//     for (let i = 0; i < nums.length; i++) {
+//         for (let j = i + 1; j < nums.length; j++) {
+//             if (nums[i] === nums[j]) {
+//             return true
+
+//             }
+//         }
+//     }
+//     return false
+// };
+// Key Fixes:
+
+// Inner Loop Starts at i + 1:
+
+// Avoids comparing an element to itself (j now starts after i).
+
+// Only checks elements that come after the current element.
+
+// Added Curly Braces (optional but recommended for clarity):
+
+// Makes the code more readable, especially for beginners.
