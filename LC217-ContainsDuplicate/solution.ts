@@ -32,27 +32,16 @@
 
 
 function containsDuplicate(nums: number[]): boolean {
-    // TODO: Implement the Contains Duplicate solution
-    // A Set is a special type of object in JavaScript/TypeScript
-    // that only stores unique values.
-    let arr: number[] = [];
-
-    // Loop through each number in the input array
+    let mySet = new Set<number>();  
+    
     for (let i = 0; i < nums.length; i++) {
-        let hasNumber = nums[i];
-
-        // If the number already exists in the Set, it's a duplicate
-        if (arr.includes(hasNumber)) {
-            return true; // Duplicate found
-        }
-
-        // Otherwise, add the number to the Set
-        arr.push(hasNumber);
+         if (mySet.has(nums[i])) {
+            return true
+         }
+        mySet.add(nums[i])
     }
-
-    // If we finish the loop without finding a duplicate, return false
-    return false;
-}
+    return false
+};
 
 // Test cases
 // function testContainsDuplicate(): void {
